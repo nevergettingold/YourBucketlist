@@ -35,7 +35,7 @@
 
 * * *
 ## 🖥 API 설계
-<img width="1347" alt="api" src="https://user-images.githubusercontent.com/91252981/149280209-21fc5ebe-7191-41fd-8eaf-24a8acb93991.png">
+<img width="475" alt="api" src="https://user-images.githubusercontent.com/91252981/149308577-bb5924d3-8ab8-4e3f-9ea7-9ddb0986c265.png">
 
 * * *
 ## 📷Screenshot
