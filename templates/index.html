@@ -1,0 +1,32 @@
+{% extends 'base_temp.html' %}
+{% block index %}
+
+    <div class="intro">
+        시간이 없는 거지, 하고 싶은 게 없는 건 아니잖아요?
+    </div>
+    <div class="main-btns">
+        {% if state == 'login' %}
+            <button type="button" class="login-btn" onclick="logout()">로그아웃</button>
+        {% else %}
+            <button type="button" class="login-btn" onclick="window.location.href='/login'">로그인</button>
+        {% endif %}
+        <button type="button" class="posting-btn" onclick="mp_posting()">작성하기</button>
+    </div>
+    <div id="buckets-box" class="card-columns buckets">
+    </div>
+
+    <!--버켓 보기 디테일-->
+    <div id="bucket-modal" class="bucket-modal" onclick=$("#bucket-modal").hide()>
+        <div id="bucket-modal-contents" class="bucket-modal-contents">
+            <!--                <img class="card-img-top"-->
+            <!--                     src="../static/${file}"-->
+            <!--                     alt="Card image cap">-->
+            <!--                <div class="card-body">-->
+            <!--                    <p>${title}</p>-->
+            <!--                    <p class="card-text">${desc}</p>-->
+            <!--                </div>-->
+        </div>
+    </div>
+    </div>
+{% endblock %}
+

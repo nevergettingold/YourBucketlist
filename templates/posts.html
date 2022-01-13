@@ -1,0 +1,24 @@
+{% extends 'base_temp.html' %}
+{% block posts %}
+    <div class="wrapper">
+        <div class="image-show" id="image-show">
+        </div>
+        <div class="image-button">
+            <label for="file">
+                👉 사진 추가 👈
+            </label>
+        </div>
+        <input type="file" id="file" name="file" class="custom-file-input" accept="image/*" onchange="loadFile(this)"/>
+
+        <div class="posting-title">
+            <label class="form-label"></label>
+            <input type="email" class="form-control" id="title" placeholder="제목을 입력하세요">
+        </div>
+        <div class="posting-description">
+            <label class="form-label">내용을 입력하세요</label>
+            <textarea class="form-control" id="desc" rows="8"></textarea>
+        </div>
+
+        <button class="posting-btn" onclick="posting()" type="button">작성하기</button>
+    </div>
+{% endblock %}

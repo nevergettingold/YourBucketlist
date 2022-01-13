@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'BMDOHYEON', "sans-serif";
+}
+
+body {
+    min-height: 100%;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+
+.footer {
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    color: black;
+    background: azure;
+}
+
+.header {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px solid black;
+    background-color: azure;
+}
+
+.logo {
+    width: 270px;
+    cursor: pointer;
+}
+
+.home-logo {
+    font-size: 50px;
+    color: red;
+}
+
+.intro {
+    font-size: 40px;
+    padding: 30px 50px;
+
+}
+
+.buckets {
+    margin: 50px;
+}
+
+.login-btn {
+    width: 80px;
+    display: block;
+    position: absolute;
+    right: 140px;
+    background-color: floralwhite;
+    cursor: pointer;
+}
+
+.posting-btn {
+    width: 80px;
+    display: block;
+    position: absolute;
+    right: 50px;
+    background-color: floralwhite;
+    cursor: pointer;
+}
+
+.card-columns {
+    column-count: 4;
+}
+
+.card-columns .card {
+    height: 320px;
+    overflow: hidden;
+}
+
+.img-wrap {
+    position: relative;
+    height: 0;
+    padding-bottom: 60%;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, .125)
+}
+
+.img-wrap img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-columns .card .card-text {
+    display: -webkit-box;
+    /*word-wrap:break-word;*/
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-columns .card img {
+    cursor: default;
+}
+
+.card-columns .card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.bucket-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1;
+}
+
+.bucket-modal-contents {
+    width: 700px;
+    max-height: 80%;
+    overflow: auto;
+    background-color: white;
+    border-radius: 4px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}

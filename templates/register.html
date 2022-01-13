@@ -1,0 +1,28 @@
+{% extends 'base_temp.html' %}
+{% block register %}
+    <div class="regi-form-wrap">
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">닉네입</span>
+            <input id="nickname" type="text" class="form-control" aria-label="Sizing example input"
+                   aria-describedby="inputGroup-sizing-sm">
+            <button type="button" class="btn btn-outline-primary" onclick="check_nickname()">닉네임 중복 확인</button>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">아이디</span>
+            <input id="id" type="text" class="form-control aria-label=" Sizing example input"
+            aria-describedby="inputGroup-sizing-sm">
+            <button type="button" class="btn btn-outline-primary" onclick="check_id()">아이디 중복 확인</button>
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">비밀번호</span>
+            <input id="password" type="password" class="form-control regi-pw-font" aria-label="Sizing example input"
+                   aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">비밀번호 재입력</span>
+            <input id="re_password" type="password" class="form-control regi-pw-font" aria-label="Sizing example input"
+                   aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <button class="btn btn-primary regi-btn" type="button" onclick="go_register()">가입하기</button>
+    </div>
+{% endblock %}
