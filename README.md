@@ -11,7 +11,7 @@
 > https://youtu.be/KtNottkJ_dk
 
 #### 🔗프로젝트 URL
-> https://showyourbucket.shop
+> http://showyourbucket.shop
 
 #### 제작 기간 & 팀원 소개
 >제작 기간: 2022.01.10 ~ 2022.01.13  
